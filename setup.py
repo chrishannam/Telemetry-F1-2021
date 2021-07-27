@@ -19,5 +19,10 @@ setuptools.setup(
         'License :: OSI Approved :: Apache Software License',
         'Operating System :: OS Independent',
     ],
+    entry_points={
+        'console_scripts': [
+            'telemetry-f1-2021-recorder=telemetry_f1_2021.main:main'
+        ]
+    },
     include_package_data=True
 )
