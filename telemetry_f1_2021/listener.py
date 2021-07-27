@@ -4,7 +4,7 @@ Basic listener to read the UDP packet and convert it to a known packet format.
 
 import socket
 
-from packets import PacketHeader, HEADER_FIELD_TO_PACKET_TYPE
+from telemetry_f1_2021.packets import PacketHeader, HEADER_FIELD_TO_PACKET_TYPE
 
 
 class TelemetryListener:
@@ -25,6 +25,6 @@ class TelemetryListener:
         packet = self.socket.recv(2048)
         header = PacketHeader.from_buffer_copy(packet)
 
-        key = (header.packet_format, header.packet_version, header.packet_id)
+        key = (header.m_packet_format, header.m_packet_version, header.m_packet_id)
 
         return HEADER_FIELD_TO_PACKET_TYPE[key].unpack(packet)

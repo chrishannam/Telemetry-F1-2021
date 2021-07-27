@@ -12,7 +12,7 @@ setuptools.setup(
     description='Decode F1 2021 telemetry data.',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/chrishannam/telemetry_f1_2021',
+    url='https://github.com/chrishannam/Telemetry-F1-2021',
     packages=setuptools.find_packages(exclude=('tests', 'examples')),
     classifiers=[
         'Programming Language :: Python :: 3',

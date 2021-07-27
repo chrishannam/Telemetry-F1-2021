@@ -20,11 +20,11 @@ logger = logging.getLogger(__name__)
 
 
 def to_json(*args, **kwargs):
-    kwargs.setdefault('m_indent', 2)
+    kwargs.setdefault('indent', 2)
 
     kwargs['sort_keys'] = True
     kwargs['ensure_ascii'] = False
-    kwargs['separators'] = ('m_,', ': ')
+    kwargs['separators'] = (',', ': ')
 
     return json.dumps(*args, **kwargs)
 
