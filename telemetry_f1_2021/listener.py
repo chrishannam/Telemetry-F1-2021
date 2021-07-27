@@ -8,7 +8,6 @@ from telemetry_f1_2021.packets import PacketHeader, HEADER_FIELD_TO_PACKET_TYPE
 
 
 class TelemetryListener:
-
     def __init__(self, host: str = None, port: int = None):
 
         # Set to default port used by the game in telemetry setup.

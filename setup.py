@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='telemetry_f1_2021',
+    name='Telemetry-F1-2021',
     version=telemetry_f1_2021.__version__,
     author='Chris Hannam',
     author_email='ch@chrishannam.co.uk',
@@ -20,9 +20,7 @@ setuptools.setup(
         'Operating System :: OS Independent',
     ],
     entry_points={
-        'console_scripts': [
-            'telemetry-f1-2021-recorder=telemetry_f1_2021.main:main'
-        ]
+        'console_scripts': ['telemetry-f1-2021-recorder=telemetry_f1_2021.main:main']
     },
-    include_package_data=True
+    include_package_data=True,
 )
