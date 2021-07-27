@@ -23,4 +23,5 @@ setuptools.setup(
         'console_scripts': ['telemetry-f1-2021-recorder=telemetry_f1_2021.main:main']
     },
     include_package_data=True,
+    python_requires='>=3.6',
 )
