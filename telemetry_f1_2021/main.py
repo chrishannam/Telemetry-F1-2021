@@ -1,4 +1,5 @@
 import copy
+import json
 import pickle
 from pathlib import Path
 
@@ -56,9 +57,12 @@ def save_packets():
     root_dir = Path(__file__).parent
 
     for packet_name, packet in samples.items():
-        print(f'Saving packet: {root_dir}/example_packets/{packet_name}.pickle')
         with open(f'{root_dir}/example_packets/{packet_name}.pickle', 'wb') as fh:
+            print(f'Saving packet: {root_dir}/example_packets/{packet_name}.pickle')
             pickle.dump(packet, fh, protocol=pickle.HIGHEST_PROTOCOL)
+
+        with open(f'{root_dir}/example_packets/json/{packet_name}.json', 'w') as fh:
+            json.dump(packet.to_dict(), fh, indent=2)
 
     print('Done!')
 

@@ -20,7 +20,10 @@ setuptools.setup(
         'Operating System :: OS Independent',
     ],
     entry_points={
-        'console_scripts': ['telemetry-f1-2021-recorder=telemetry_f1_2021.main:main']
+        'console_scripts': [
+            'telemetry-f1-2021-recorder=telemetry_f1_2021.main:main',
+            'telemetry-f1-2021-update-packets=telemetry_f1_2021.main:save_packets',
+        ]
     },
     include_package_data=True,
     python_requires='>=3.6',

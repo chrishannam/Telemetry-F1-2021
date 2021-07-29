@@ -1,0 +1,66 @@
+{
+  "m_header": {
+    "m_packet_format": 2021,
+    "m_game_major_version": 1,
+    "m_game_minor_version": 5,
+    "m_packet_version": 1,
+    "m_packet_id": 3,
+    "m_session_uid": 636191379897410300,
+    "m_session_time": 439.336,
+    "m_frame_identifier": 7777,
+    "m_player_car_index": 19,
+    "m_secondary_player_car_index": 255
+  },
+  "m_event_string_code": [
+    66,
+    85,
+    84,
+    78
+  ],
+  "m_event_details": {
+    "m_fastest_lap": {
+      "m_vehicle_idx": 4,
+      "m_lap_time": 0.0
+    },
+    "m_retirement": {
+      "m_vehicle_idx": 4
+    },
+    "m_team_mate_in_pits": {
+      "m_vehicle_idx": 4
+    },
+    "m_race_winner": {
+      "m_vehicle_idx": 4
+    },
+    "m_penalty": {
+      "m_penalty_type": 4,
+      "m_infringement_type": 0,
+      "m_vehicle_idx": 0,
+      "m_other_vehicle_idx": 0,
+      "m_time": 3,
+      "m_lap_num": 0,
+      "m_places_gained": 0
+    },
+    "m_speed_trap": {
+      "m_vehicle_idx": 4,
+      "m_speed": 0.0,
+      "m_overall_fastest_in_session": 0,
+      "m_driver_fastest_in_session": 0
+    },
+    "m_start_lights": {
+      "m_num_lights": 4
+    },
+    "m_drive_through_penalty_served": {
+      "m_vehicle_idx": 4
+    },
+    "m_stop_go_penalty_served": {
+      "m_vehicle_idx": 4
+    },
+    "m_flashback": {
+      "m_flashback_frame_identifier": 4,
+      "m_flashback_session_time": 0.0
+    },
+    "m_buttons": {
+      "m_button_status": 4
+    }
+  }
+}

@@ -15,9 +15,7 @@ class PacketLoader:
 
     def fetch_packets(self):
         for packet in self.path_to_packets.glob(pattern='*.pickle'):
-            print(packet)
             with open(packet, 'rb') as raw_data:
                 packet_data = pickle.load(raw_data)
-                print(packet)
-                self.packets[packet.replace('.pickle', '')] = packet_data
+                self.packets[f"{str(packet).replace('.pickle', '')}"] = packet_data
         return self.packets
